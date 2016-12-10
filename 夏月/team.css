@@ -11,7 +11,7 @@
 		background: lightgray;
 		width: 100%;
 		height: 100%;
-		/*overflow: hidden;*/
+		overflow: hidden;
 	}
 	
 	
@@ -112,20 +112,131 @@
 		height: 100%;
 		position: relative;
 	}
+	
 	#content>div{
 		width: 100%;
-		height: 100%;
+		height: 1000px;
 		overflow: hidden;
 		border: 1px solid red;
 	}
-	/*#D_1{
-		background: url(img/bg1.jpg) no-repeat scroll top left;
-	}*/
+	/*第一页*/
+	#D_1{
+		background: url(img/bg1.jpg) no-repeat;
+
+	}
+   /*第一页的中间内容*/
+	#D_1_box{
+		width: 100%;
+		height: 520px;
+	}
+	#D_1_box1{
+		width: 1100px;
+		height: 520px;
+		margin: 0 auto;
+		margin-top: 180px;
+		border: 1px yellow solid;
+		position: relative;		
+}
+    .layer{
+    	width: 1100px;
+		height: 520px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+
+    }
+    #D_1_box1 #onelayer{
+       background-color: rgb(220,108,95);
+       z-index: 999;
+    }
+	#D_1_box1 #twolayer{
+       background-color: rgb(149,220,143);
+       z-index: 888;
+    }
+    #D_1_box1 #threelayer{
+       background-color: rgb(100,185,211);
+       z-index: 777;
+    }
+    #D_1_box1 #fourlayer{
+       background-color: rgb(0,0,0);
+       z-index: 666;
+    }
+    /*第一页的四个小圆点*/
+    #D_1_box1 #circle{
+    	width: 140px;
+    	height: 15px;
+    	position: absolute;
+    	bottom: 40px;
+    	left: 45%;
+    	z-index: 1000;
+
+    }
+	#D_1_box1 .yd{
+		float: left;
+		width: 20px;
+		height: 20px;
+		margin-left:10px;
+		border-radius: 50%;
+		background: lightgrey;
+		cursor: pointer;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
+	#D_1_box1 li p{
+		color: white;
+		font-size: 80px;
+		position: absolute;
+		top: 40%;
+		left: 40%;
+	}
+	/*第五页*/
+	#D_5{
+		background: url(img/bg5.jpg) no-repeat;
+
+	}
+	#D_5_box{
+		width: 100%;
+		height: 1000px;
+	}
+	#D_5_box1{
+		width: 1100px;
+		height: 1000px;
+		margin: 0 auto;
+		margin-top: 80px;		
+		border: 1px yellow solid;
+		position: relative;		
+}
+	/*上半部分w文字*/
+	#D_5_box1 #text_left{
+		width: 350px;
+		height: 140px;
+		border: 1px red solid;
+		position: absolute;
+		top: 100px;
+		left: 50px;
+		color: white;
+		font-size: 60px;
+		text-align: center;
+		padding-top: 40px;
+	}
+	#D_5_box1 #text_right{
+		width: 480px;
+		height: 200px;
+		border: 1px yellow solid;
+		position:absolute;
+		top: 70px;
+		right:50px;
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		padding-top: 20px;
+		line-height: 25px;
+	}
+	#D_5_box1 #bottom{
+		width: 944px;
+		height: 448px;
+		border: 1px yellow solid;
+		background: url(img/team.png) no-repeat;
+		position:absolute;
+		bottom: 20%;
+		left: 100px;
+	}

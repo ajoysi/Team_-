@@ -1,10 +1,14 @@
 //alert('kkk');
+function $(id){
+	return document.getElementById(id);
+}
 	var black = document.getElementsByClassName('black');
+
 //	alert(black.length);
-	var menu_right = document.getElementById('menu_right');
+	var menu_right = $('menu_right');
 	var blue = document.getElementsByClassName('blue');
 	var nav_lis = menu_right.getElementsByTagName('li');
-	var content = document.getElementById('content');
+	var content =$('content');
 	var conts = document.getElementsByClassName('cont');		//内容页
 	var lists = document.getElementsByClassName('list');
 	//alert(lists.length);
