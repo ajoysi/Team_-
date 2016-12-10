@@ -1,24 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>test</title>
-	<style>
-		#box1{
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			background: red;
-		}
-		#box2{
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			background: blue;
-		}
-	</style>
-</head>
-<body>
-	<div id="box1"></div>
-	<div id="box2"></div>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<title>单页视觉差滚屏</title>
+		<link rel="stylesheet" type="text/css" href="team.css"/>
+	</head>
+	<body>
+		<!--------导航栏------>
+		<div id="nav">
+			<div id="bar">
+				<div id="meau_left">
+					<a id="logo" href="#"><img src="img/logo.png"/></a>
+					<span id="music"><img src="img/musicon.gif"/></span>
+				</div>
+				<div id="menu_right">
+					<ul>
+						<li class="li01">
+							<span class="blue sp"><img src="img/home.png"/></span>
+							<span class="black sp" style="width: 70px;"><img src="img/home_gruen.png"/></span>
+						</li>
+						<li class="">
+							<span class="blue sp">Course</span>
+							<span class="black sp">Course</span>
+						</li>
+						<li class="">
+							<span class="blue sp">Works</span>
+							<span class="black sp">Works</span>
+						</li>
+						<li class="">
+							<span class="blue sp">About</span>
+							<span class="black sp">About</span>
+						</li>
+						<li class="">
+							<span class="blue sp">Team</span>
+							<span class="black sp">Team</span>
+						</li>
+					</ul>
+					<div class="cl"></div>
+				</div>
+			</div>
+		</div>
+		<!--------侧边栏------>
+		<div id="side_bar">
+			<div class="list" style="background-color: red;"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+			<div class="list"></div>
+		</div>
+		
+		
+		
+		<!--------内容页------>
+		<div id="content">
+			<div id="D_1" class="cont">
+				<img src="img/bg1.jpg"/>
+			</div>
+			<div id="D_2" class="cont">
+				<img src="img/bg2.jpg"/>
+			</div>
+			<div id="D_3" class="cont">
+				<img src="img/bg3.jpg"/>
+			</div>
+			<div id="D_4" class="cont">
+				<img src="img/bg4.jpg"/>
+			</div>
+			<div id="D_5" class="cont">
+				<img src="img/bg5.jpg"/>
+			</div>
+		</div>
+	</body>
 </html>
+<script src="animate.js"></script>
+<script src="team.js"></script>

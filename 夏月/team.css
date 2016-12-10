@@ -1,0 +1,131 @@
+@charset "utf-8";
+	/*全局样式设置*/
+	html,body,div,ul,li,ol,h1,h2,h3,a,img,p{
+		padding: 0;
+		margin: 0;
+	}
+	ul li,ol li{
+		list-style: none;
+	}
+	body{
+		background: lightgray;
+		width: 100%;
+		height: 100%;
+		/*overflow: hidden;*/
+	}
+	
+	
+	/**********导航栏********/
+	#nav{
+		height: 80px;
+		width: 100%;
+		border: 1px solid red;
+		background: white;
+		position: fixed;
+		z-index: 99999;
+	}
+	#bar{
+		width: 1100px;
+		height: 80px;
+		margin: 0 auto;
+		position: relative;
+		background: palegoldenrod;
+	}
+	#meau_left{
+		position: absolute;
+		bottom: 15px;
+	}
+	
+	#menu_right{
+		position: absolute;
+		bottom: 15px;
+		right: 0;
+/*		border: 1px solid yellow;*/
+	}
+	#menu_right ul{
+		float: right;
+		position: relative;
+		top: 5px;
+	}
+	#menu_right li{
+		text-align: center;
+		position: relative;
+		margin-left:  40px;
+		/*width: 60px;*/
+		height: 15px;
+		float: left;
+		border: 1px solid red;
+	}
+	.sp{
+		position: absolute;
+		display: block;
+		cursor: pointer;
+	}
+	#menu_right .li01::after{
+		content: '';
+		width: 0;
+		height: 0;
+		border: 12px solid transparent;
+		border-top-color: #1E90FF;
+		position: absolute;
+		left: 50%;
+		margin-left: -12px;
+		top: 25px;
+	}
+	.black{
+		/*border: 1px solid black;*/
+		text-align: left;
+		position: absolute;
+		left: 0;
+		width: 0px;
+		overflow: hidden;
+	}
+	.blue{
+		position: absolute;
+		left: 0;
+		background: pink;
+		color: dodgerblue;
+	}
+	
+	.cl{clear: both;}
+	/**********侧边栏********/
+	#side_bar{
+		position: fixed;
+		right: 20px;
+		top: 40%;
+		z-index: 99999;
+	}
+	#side_bar>div{
+		width: 15px;
+		height: 15px;
+		margin: 8px 0;
+		border-radius: 50%;
+		background: goldenrod;
+		cursor: pointer;
+	}
+	.list{
+		background: red;
+	}
+	/**********内容页********/
+	#content{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	#content>div{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		border: 1px solid red;
+	}
+	/*#D_1{
+		background: url(img/bg1.jpg) no-repeat scroll top left;
+	}*/
+	
+	
+	
+	
+	
+	
+	
+	
