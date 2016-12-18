@@ -152,7 +152,31 @@ function $(id){
 	       }
 	           animation1();
 	
-   
+ //第二页
+   var lis=document.getElementsByClassName('li1');
+console.log(lis);
+for (var i = 0; i < 12; i++) {
+lis[i].onmouseover=function() {
+	this.className="show";
+}
+lis[i].onmouseout=function() {
+	this.className="li1";
+}
+};
+var plane1=document.getElementById('plane1');
+var bg=document.getElementById('bg');
+bg.onmouseover=function() {
+	plane1.className="plane_1"
+	plane2.className="plane_2"
+	plane3.className="plane_3"
+}
+bg.onmouseout=function() {
+	plane1.className="plane_11"
+	plane2.className="plane_22"
+	plane3.className="plane_33"
+}
+  
+			  
   
 			
 			
