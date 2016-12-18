@@ -135,7 +135,10 @@
 		margin: 0 auto;
 		margin-top: 180px;
 		border: 1px yellow solid;
-		position: relative;		
+		position: relative;
+     perspective: 1000px;
+     transform-style: preserve-3d;
+
 }
     .layer{
     	width: 1100px;
@@ -147,20 +150,71 @@
     }
     #D_1_box1 #onelayer{
        background-color: rgb(220,108,95);
-       z-index: 999;
+       /*animation: yundong1 2s linear 0s 1;*/
+       display: block;
     }
 	#D_1_box1 #twolayer{
        background-color: rgb(149,220,143);
-       z-index: 888;
+       display: none;
+       /*animation: yundong2 2s linear 0s 1;*/
+
     }
     #D_1_box1 #threelayer{
        background-color: rgb(100,185,211);
-       z-index: 777;
+       display: none;
+       /*animation: yundong1 2s linear 0s 1;*/
+
     }
     #D_1_box1 #fourlayer{
        background-color: rgb(0,0,0);
-       z-index: 666;
+       display: none;
+       z-index: 1;
+       /*animation: yundong2 2s linear 0s 1;*/
+
     }
+    @-webkit-keyframes yundong2{
+    	from{
+ 		z-index:-90;
+ 		left: 0px;
+ 	}
+ 	30%{
+ 	z-index: -90;
+ 	left:300px;
+	transform:rotateY(-45deg);
+   }
+   31%{
+   		z-index:90;
+   }
+   100%{
+   
+     left:0px;
+	transform:rotateY(0deg);
+   }
+	
+}
+@-webkit-keyframes yundong1{
+ 	from{
+ 		z-index:90;
+ 		left: 0px;
+ 	}
+ 	30%{
+  	z-index:100;
+ 	left:-300px;
+	transform:rotateY(45deg);
+   }
+   
+   31%{
+   		z-index:-90;
+   }
+   100%{
+   
+   	left:0px;
+	transform:rotateY(0deg);
+   }
+	
+}
+
+
     /*第一页的四个小圆点*/
     #D_1_box1 #circle{
     	width: 140px;
@@ -171,15 +225,20 @@
     	z-index: 1000;
 
     }
-	#D_1_box1 .yd{
+	#D_1_box1 .yd,#D_1_box1 .yd1{
 		float: left;
 		width: 20px;
 		height: 20px;
 		margin-left:10px;
 		border-radius: 50%;
-		background: lightgrey;
+		background-color: lightgrey;
 		cursor: pointer;
 	}
+	/*#D_1_box1 .yd1{
+	background-color:orange ;
+	
+	
+	}*/
 	
 	#D_1_box1 li p{
 		color: white;
@@ -232,11 +291,58 @@
 		line-height: 25px;
 	}
 	#D_5_box1 #bottom{
-		width: 944px;
-		height: 448px;
+		width: 960px;
+		height: 450px;
 		border: 1px yellow solid;
-		background: url(img/team.png) no-repeat;
+		/*background: url(img/team.png) no-repeat;*/
 		position:absolute;
 		bottom: 20%;
 		left: 100px;
 	}
+    #D_5_box1 #bottom .team{
+    	width: 118px;
+    	height: 448px;
+		border: 1px red solid;
+		float: left;
+		background: url(img/team.png) no-repeat;
+
+    }
+    #D_5_box1 #bottom #team1{
+    	background-position: -0px -0px;
+    	opacity: 1;
+    }
+     #D_5_box1 #bottom #team2{
+    	background-position: -120px -0px;
+    	opacity: 1;
+
+    }
+    #D_5_box1 #bottom #team3{
+    	background-position: -240px -0px;
+    	opacity: 1;
+
+    }
+     #D_5_box1 #bottom #team4{
+    	background-position: -360px -0px;
+    	opacity: 1;
+
+    }
+    #D_5_box1 #bottom #team5{
+    	background-position: -480px -0px;
+    	opacity: 1;
+
+    }
+    #D_5_box1 #bottom #team6{
+    	background-position: -600px -0px;
+    	opacity: 1;
+
+    }
+    #D_5_box1 #bottom #team7{
+    	background-position: -720px -0px;
+    	opacity: 1;
+
+    }
+    #D_5_box1 #bottom #team8{
+    	background-position: -840px -0px;
+    	opacity: 1;
+
+    }
