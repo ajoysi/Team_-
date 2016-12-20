@@ -175,7 +175,116 @@ bg.onmouseout=function() {
 	plane2.className="plane_22"
 	plane3.className="plane_33"
 }
-  
+  var D_3=$("D_3");
+	var pencel1=$("pencel1");
+	var pencel2=$("pencel2");
+	var pencel3=$("pencel3");
+	var about1=$("about1");
+	var about1_1=$("about1_1");
+	var about3=$("about3");
+	var about3_1=$("about3_1");
+	var Xabout1_1=$("Xabout1");
+	var Xabout1_2=$("Xabout2");
+	var Xabout1_3=$("Xabout3");
+	var Xabout1_4=$("Xabout4");
+	var Xabout3_1=$("Xabout3_1");
+	var Xabout3_2=$("Xabout3_2");
+	var Xabout3_3=$("Xabout3_3");
+	var Xabout3_4=$("Xabout3_4");
+	var worksimg1=$("worksimg1");
+	var worksimg2=$("worksimg2");
+	var worksimg3=$("worksimg3");
+	var worksimg4=$("worksimg4");
+	// var bady = document.getElementsByTagName('body');
+
+	// console.log(document.body.scrollTop);
+	worksimg1.onmouseover=function (argument) {
+		
+	console.log(1);
+	worksimg1.style.opacity=.5;
+		
+	}
+	worksimg1.onmouseout=function (argument) {
+	worksimg1.style.opacity=0;
+		
+	}
+	worksimg2.onmouseover=function (argument) {
+	worksimg2.style.opacity=.5;
+		
+	}
+	worksimg2.onmouseout=function (argument) {
+	worksimg2.style.opacity=0;
+		
+	}
+	worksimg3.onmouseover=function (argument) {
+	worksimg3.style.opacity=.5;
+		
+	}
+	worksimg3.onmouseout=function (argument) {
+	worksimg3.style.opacity=0;
+		
+	}
+	worksimg4.onmouseover=function (argument) {
+	worksimg4.style.opacity=.5;
+		
+	}
+	worksimg4.onmouseout=function (argument) {
+	worksimg4.style.opacity=0;
+		
+	}
+
+	D_3.onmouseover=function (argument) {
+			pencel1.style.top="200px";
+			pencel2.style.top="480px";
+			pencel3.style.top="541px";
+		}
+	D_3.onmouseout=function (argument) {
+			pencel1.style.top="100px";
+			pencel2.style.top="380px";
+			pencel3.style.top="641px";
+		}
+	about1.onmouseout=function (argument) {
+		Xabout1_1.style.top=0;
+		Xabout1_2.style.left=0;
+		Xabout1_3.style.left=0;
+		Xabout1_4.style.top=0;
+		about1_1.style.width="286px";
+		about1_1.style.height="220px";
+	}
+	about1.onmouseover=function (argument) {
+		Xabout1_1.style.top="100px";
+		Xabout1_2.style.left="-130px";
+		Xabout1_3.style.left="130px";
+		Xabout1_4.style.top="-100px";
+		about1_1.style.width="260px";
+		about1_1.style.height="200px";
+	}
+	about3.onmouseout=function (argument) {
+		Xabout3_1.style.top=0;
+		Xabout3_2.style.left=0;
+		Xabout3_3.style.left=0;
+		Xabout3_4.style.top=0;
+		about3_1.style.width="286px";
+		about3_1.style.height="220px";
+	}
+	about3.onmouseover=function (argument) {
+		Xabout3_1.style.top="100px";
+		Xabout3_2.style.left="-130px";
+		Xabout3_3.style.left="130px";
+		Xabout3_4.style.top="-100px";
+		about3_1.style.width="260px";
+		about3_1.style.height="200px";
+	}
+
+
+	
+	
+	
+
+
+
+
+
 			  
   
 			
